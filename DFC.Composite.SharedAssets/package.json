@@ -1,0 +1,26 @@
+{
+  "name": "govuk.frontend",
+  "version": "1.0.0",
+  "description": "this is a sample gov.uk front end",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Crisp",
+  "license": "ISC",
+  "dependencies": {
+    "govuk-frontend": "^2.5.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "*",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  }
+}

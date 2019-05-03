@@ -1,0 +1,9 @@
+﻿/* see here for SASS variable names --> https: //design-system.service.gov.uk/styles/colour/*/
+
+@import "_ESFA-variable.scss";
+
+@import "node_modules/govuk-frontend/all";
+
+/* overrides stop GovUK-Frontend generated CSS - node_modules\govuk-frontend\components\header\_header.scss */
+
+@import "_ESFA-CSS-overrides.scss";
