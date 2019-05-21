@@ -35,6 +35,7 @@ jobs:
     parameters:
       npmfolder: 'DFC.Composite.SharedAssets'
       publishpath: 'DFC.Composite.SharedAssets/wwwroot/ESFA'
+      publishname: 'esfa_assets'
 
 
 
