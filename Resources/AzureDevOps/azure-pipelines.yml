@@ -31,7 +31,7 @@ jobs:
       SolutionBaseName: $(SolutionBaseName)
       BuildPlatform: $(BuildPlatform)
       BuildConfiguration: $(BuildConfiguration)
-  - template: AzureDevOpsTemplates/Build/dfc-dotnetcorefunctionapp-build-notests.yml@dfc-devops
+  - template: AzureDevOpsTemplates/Build/dfc-gulp-build.yml@dfc-devops
     parameters:
       npmfolder: 'DFC.Composite.SharedAssets'
       publishpath: 'DFC.Composite.SharedAssets/wwwroot/ESFA'
