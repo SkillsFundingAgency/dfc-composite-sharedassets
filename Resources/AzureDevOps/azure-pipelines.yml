@@ -34,7 +34,7 @@ jobs:
   - template: AzureDevOpsTemplates/Build/dfc-gulp-build.yml@dfc-devops
     parameters:
       npmfolder: 'DFC.Composite.SharedAssets'
-      publishpath: 'DFC.Composite.SharedAssets/wwwroot/ESFA'
+      publishpath: 'wwwroot/ESFA'
       publishname: 'esfa_assets'
 
 
