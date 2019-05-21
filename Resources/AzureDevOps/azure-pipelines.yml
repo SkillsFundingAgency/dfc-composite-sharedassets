@@ -9,7 +9,8 @@ resources:
   - repository: dfc-devops
     type: github
     name: SkillsFundingAgency/dfc-devops
-    ref: refs/tags/v1.1.1
+    ##TO DO: update to tagged version
+    ref: refs/heads/NCSD-741-AddGulpBuildStepTemplate
     endpoint: 'GitHub (ESFA)'
 
 jobs:
@@ -24,11 +25,16 @@ jobs:
     - visualstudio
 
   steps:
+  #TO DO: change this to more appropriate step template  
   - template: AzureDevOpsTemplates/Build/dfc-dotnetcorefunctionapp-build-notests.yml@dfc-devops
     parameters:
       SolutionBaseName: $(SolutionBaseName)
       BuildPlatform: $(BuildPlatform)
       BuildConfiguration: $(BuildConfiguration)
+  - template: AzureDevOpsTemplates/Build/dfc-dotnetcorefunctionapp-build-notests.yml@dfc-devops
+    parameters:
+      npmfolder: 'DFC.Composite.SharedAssets'
+      publishpath: 'DFC.Composite.SharedAssets/wwwroot/ESFA'
 
 
 
