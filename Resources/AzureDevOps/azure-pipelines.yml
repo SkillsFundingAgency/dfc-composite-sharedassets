@@ -3,13 +3,13 @@ variables:
     BuildPlatform: 'any cpu'
     BuildConfiguration: 'release'
 
+##TO DO: update to tagged version
 resources:
   repositories:
   - repository: self
   - repository: dfc-devops
     type: github
     name: SkillsFundingAgency/dfc-devops
-    ##TO DO: update to tagged version
     ref: refs/heads/NCSD-741-AddGulpBuildStepTemplate
     endpoint: 'GitHub (ESFA)'
 
