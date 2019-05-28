@@ -39,7 +39,7 @@
     },
     "resources": [
       {
-        "name": "exploreCareersAssetsCDN",
+        "name": "[parameters('cdnEndPointName')]",
         "type": "Microsoft.Resources/deployments",
         "resourceGroup": "[parameters('cdnProfileResourceGroup')]",
         "apiVersion": "2017-05-10",
