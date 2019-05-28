@@ -1,0 +1,21 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "cdnEndPointName": {
+            "value": "__CdnEndPointName__"
+        },
+        "cdnProfileName": {
+            "value": "__CdnProfileName__"
+        },
+        "cdnProfileResourceGroup": {
+            "value": "__SharedResourceGroupName__"
+        },
+        "customCdnFqdn": {
+            "value": "__CustomCdnFqdn__"
+        },
+        "originHostName": {
+            "value": "__OriginHostName__"
+        }
+    }
+}

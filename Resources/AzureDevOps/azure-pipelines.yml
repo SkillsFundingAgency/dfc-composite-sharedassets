@@ -1,4 +1,5 @@
 variables:
+    ArmTemplateRoot: '$(Build.SourcesDirectory)\Resources\ArmTemplates' 
     SolutionBaseName: 'DFC.Composite.SharedAssets'
     BuildPlatform: 'any cpu'
     BuildConfiguration: 'release'
@@ -31,6 +32,9 @@ jobs:
       SolutionBaseName: $(SolutionBaseName)
       BuildPlatform: $(BuildPlatform)
       BuildConfiguration: $(BuildConfiguration)
+  - template: AzureDevOpsTemplates/Build/dfc-arm-build.yml@dfc-devops
+    parameters:
+      ArmTemplateRoot: $(ArmTemplateRoot)
   - template: AzureDevOpsTemplates/Build/dfc-gulp-build.yml@dfc-devops
     parameters:
       npmfolder: 'DFC.Composite.SharedAssets'
