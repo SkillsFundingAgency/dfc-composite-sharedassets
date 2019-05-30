@@ -4,7 +4,6 @@ variables:
     BuildPlatform: 'any cpu'
     BuildConfiguration: 'release'
 
-##TO DO: update to tagged version
 resources:
   repositories:
   - repository: self
@@ -16,7 +15,6 @@ resources:
 
 jobs:
 
-# Build the app with the dfc-dotnetcore-build template.  Runs if the output of TestBranchName is Version2+
 - job: BuildDotNetStandard
   displayName: Build-DotNetStandard
   pool:
@@ -26,8 +24,7 @@ jobs:
     - visualstudio
 
   steps:
-  #TO DO: change this to more appropriate step template  
-  - template: AzureDevOpsTemplates/Build/dfc-dotnetcorefunctionapp-build-notests.yml@dfc-devops
+  - template: AzureDevOpsTemplates/Build/dfc-dotnetcore-build-notests.yml@dfc-devops
     parameters:
       SolutionBaseName: $(SolutionBaseName)
       BuildPlatform: $(BuildPlatform)
