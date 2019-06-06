@@ -1,0 +1,21 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "cdnEndPointName": {
+            "value": "dfc-foo-compui-assets"
+        },
+        "cdnProfileName": {
+            "value": "dfc-dev-shared-cdn"
+        },
+        "cdnProfileResourceGroup": {
+            "value": "dfc-test-template-rg"
+        },
+        "customCdnFqdn": {
+            "value": "dev-cdn.foo.bar.com"
+        },
+        "originHostName": {
+            "value": "dfcdevcompuisharedstr.z6.web.core.windows.net"
+        }
+    }
+}
